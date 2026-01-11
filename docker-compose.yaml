@@ -2,7 +2,8 @@ services:
   jenkins:
     build:
       context: .
-      dockerfile: Dockerfile.jenkins
+      dockerfile: Dockerfile
+    image: custom-jenkins-docker
     container_name: jenkins
     user: root
     restart: unless-stopped
